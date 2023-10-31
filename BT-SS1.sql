@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS student_management;
+CREATE DATABASE IF NOT EXISTS student_management;
+USE student_management;
+
+DROP TABLE IF EXISTS Class;
+CREATE TABLE IF NOT EXISTS Class
+(
+    id     INT AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(255) NOT NULL
+);
+
+DROP TABLE IF EXISTS Teacher;
+CREATE TABLE IF NOT EXISTS Teacherstudentstudent
+(
+    id      INT AUTO_INCREMENT PRIMARY KEY,
+    `name`  VARCHAR(255) NOT NULL,
+    age     TINYINT      NOT NULL,
+    country VARCHAR(100) NOT NULL
+);

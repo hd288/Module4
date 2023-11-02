@@ -113,7 +113,3 @@ ALTER TABLE ImportFormDetail
 ALTER TABLE ImportFormDetail
     ADD CONSTRAINT fk_IFD_product_id
         FOREIGN KEY (product_id) REFERENCES Product (id);
-
-
-
-

@@ -158,11 +158,11 @@ FROM DMSV
 GROUP BY MaKhoa;
 
 #28
-# SELECT MaKhoa,
-#        COUNT(CASE WHEN Phai = 'Nam' THEN 1 ELSE NULL END) AS TongSinhVienNam,
-#        COUNT(CASE WHEN Phai = 'Nữ' THEN 1 ELSE NULL END)  AS TongSinhVienNu
-# FROM DMSV
-# GROUP BY MaKhoa;
+SELECT MaKhoa,
+       COUNT(CASE WHEN Phai = 'Nam' THEN 1 ELSE NULL END) AS TongSinhVienNam,
+       COUNT(CASE WHEN Phai = 'Nữ' THEN 1 ELSE NULL END)  AS TongSinhVienNu
+FROM DMSV
+GROUP BY MaKhoa;
 SELECT MaKhoa, sum(Phai like 'nam') as Nam, sum(phai like 'nữ') as Nữ
 from dmsv
 group by MaKhoa;
